@@ -3,14 +3,7 @@ import Header from "../components/Header";
 import Form from "../components/Form";
 import Links from "../components/Links";
 import Footer from "../components/Footer";
-
-const cityNames = {
-  krakow: "Kraków",
-  warszawa: "Warszawa",
-  katowice: "Katowice",
-  wroclaw: "Wrocław",
-  poznan: "Poznań",
-};
+import cityNames from "../data/cities.js";
 
 export default function CityPage() {
   const { city } = useParams();

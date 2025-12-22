@@ -5,3 +5,5 @@ const cityNames = {
   wroclaw: "Wrocław",
   poznan: "Poznań",
 };
+
+export default cityNames
