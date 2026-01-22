@@ -20,8 +20,14 @@ body {
   align-items: center;
   place-items: center;
   justify-content: center;
-  min-width: 320px;
+  width: 50%;
+  margin: 0 auto;
   min-height: 100vh;
+}
+
+/* Articles.css */
+.articles {
+    display: flex;
 }
 
 
