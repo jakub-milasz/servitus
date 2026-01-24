@@ -13,6 +13,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* TODO: zrobić klasę, która zrobi setup dla kolejnych sekcji */
+
+/* Header.css */
+.logo {
+    width: 150px;
+    height: auto;
+    display: flex;
+    justify-self: center;
+}
 
 body {
   margin: 0 auto;
@@ -20,7 +29,7 @@ body {
   align-items: center;
   place-items: center;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   min-height: 100vh;
 }
@@ -28,6 +37,8 @@ body {
 /* Articles.css */
 .articles {
     display: flex;
+    width: 80%;
+    margin: 0 auto;
 }
 
 article {
@@ -36,8 +47,7 @@ article {
     border-radius: 8px;
     padding: 16px;
     margin: 16px;
-    max-width: 400px;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; 
 }
 
 button {
@@ -50,6 +60,61 @@ button {
     transition: background-color 0.3s ease;
 }
 
+/* Contact */
+.contact {
+  width: 100%;
+  margin: 0 auto 30px;
+  min-height: 360px;
+  align-items: center;
+  position: relative; /* Kluczowe: pozwala ustawić tło pod spodem */
+  overflow: hidden;    /* Zapobiega "wylewaniu" się rozmazanych krawędzi */
+  border-bottom: 3px solid var(--gold);
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/rury.png'); /* Ścieżka do obrazu tła */
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  z-index: -1; /* Umieszcza tło za treścią */
+  opacity: 0.6;
+}
+
+.contact-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Intro */
+.intro {
+  width: 100%;
+  min-height: 360px;
+  align-items: center;
+  position: relative; /* Kluczowe: pozwala ustawić tło pod spodem */
+  overflow: hidden;    /* Zapobiega "wylewaniu" się rozmazanych krawędzi */
+  border-bottom: 3px solid var(--gold);
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/slup.png'); /* Ścieżka do obrazu tła */
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  z-index: -1; /* Umieszcza tło za treścią */
+  opacity: 0.6;
+}
 
 h1 {
     text-align: center;
@@ -62,7 +127,7 @@ h1 {
 form {
     width: 80%;
     max-width: 400px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 
 .form-group {

@@ -1,6 +1,8 @@
+import Description from "./Description";
+
 export default function Intro() {
   return (
-    <>
+    <div className="intro">
       <p>Masz urządzenia przesyłowe na swojej nieruchomości?</p>
       <p>Sprawdź, jakie masz prawa</p>
       <p>
@@ -10,7 +12,8 @@ export default function Intro() {
       <p>
         Nasza kancelaria specjalizuje się w sprawach dotyczących służebności przesyłu. Pomagamy właścicielom gruntów ustalić, czy przedsiębiorstwo przesyłowe korzysta z nieruchomości zgodnie z prawem oraz czy przysługuje im wynagrodzenie, odszkodowanie lub uregulowanie stanu prawnego.
       </p>
-    </>
+      <Description />
+    </div>
   );
 }
 

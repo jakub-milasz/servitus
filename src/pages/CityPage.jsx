@@ -26,9 +26,7 @@ export default function CityPage() {
     <Header cityName={cityName} />
     <Form />
     <Intro />
-    <Description />
     <Articles />
-    <List />
     <Contact />
     <Links />
     <Footer />
