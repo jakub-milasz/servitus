@@ -1,7 +1,7 @@
 export default function Description() {
   return (
     <>
-      <p>Służebność przesyłu – co to oznacza dla właściciela?</p>
+      <p>Służebność przesyłu - co to oznacza dla właściciela?</p>
       <p>
         Służebność przesyłu to prawo, które pozwala przedsiębiorstwom korzystać z cudzej nieruchomości w zakresie niezbędnym do eksploatacji urządzeń przesyłowych. W praktyce często bywa tak, że urządzenia zostały posadowione bez zgody właściciela lub bez odpowiedniego wynagrodzenia.
       </p>

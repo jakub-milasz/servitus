@@ -24,7 +24,6 @@ export default function CityPage() {
   return (
   <>
     <Header cityName={cityName} />
-    <Form />
     <Intro />
     <Articles />
     <Contact />

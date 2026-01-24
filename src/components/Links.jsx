@@ -1,6 +1,6 @@
 import React from "react";
 import cityNames from "../pages/CityPage.jsx";
-import logo2 from '../img/logo2.jpeg'
+import logo2 from '../img/logo2.png'
 
 export default function Links() {
   console.log(cityNames);

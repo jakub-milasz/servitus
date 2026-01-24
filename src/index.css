@@ -14,13 +14,18 @@
 }
 
 /* TODO: zrobić klasę, która zrobi setup dla kolejnych sekcji */
+/* .background {
+  width: 100%;
+  background-color: #413d3e;
+  padding-bottom: 30px;
+} */
 
 /* Header.css */
 .logo {
-    width: 150px;
-    height: auto;
-    display: flex;
-    justify-self: center;
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-self: center;
 }
 
 body {
@@ -36,34 +41,34 @@ body {
 
 /* Articles.css */
 .articles {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
 }
 
 article {
-    flex: 1;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 16px;
-    background-color: #f9f9f9; 
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  background-color: #f9f9f9;
 }
 
 button {
-    background-color: #e0e0e0;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
+  background-color: #e0e0e0;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
 }
 
 /* Contact */
 .contact {
   width: 100%;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   min-height: 360px;
   align-items: center;
   position: relative; /* Kluczowe: pozwala ustawić tło pod spodem */
@@ -116,10 +121,13 @@ button {
   opacity: 0.6;
 }
 
+.intro-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
 h1 {
-    text-align: center;
-    /* font-size: 2.5rem;
-    margin-bottom: 20px; */
+  text-align: center;
 }
 
 
@@ -128,6 +136,10 @@ form {
     width: 80%;
     max-width: 400px;
     margin: 0 auto 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f9f9f9;
 }
 
 .form-group {
@@ -187,17 +199,20 @@ button[type="submit"]:hover {
 
 /* Links */
 .links {
-    margin-top: 20px;
-    text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 /* Footer */
-footer {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 14px;
-    color: #666;
+footer p{
+  margin-top: 40px;
+  margin-bottom: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
 }
+
 
 
 @media (prefers-color-scheme: light) {
