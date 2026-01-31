@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Form() {
   return (
-    <form action="https://formsubmit.co/michal.milasz@adwokatura.pl" method="post">
+    <form action="https://formsubmit.co/michal.milasz@adwokatura.pl" method="post" id="form">
       
       <div className="form-group">
         <label htmlFor="firstname">Imię:</label>
@@ -20,7 +20,6 @@ export default function Form() {
           type="email" 
           id="email" 
           name="email" 
-          placeholder="przyklad@poczta.pl" 
           required 
         />
       </div>
@@ -38,7 +37,6 @@ export default function Form() {
             type="tel" 
             id="phone" 
             name="phone" 
-            placeholder="123456789" 
             required 
           />
         </div>
@@ -52,9 +50,7 @@ export default function Form() {
             ></textarea>
         </div>
       </div>
-
       <button type="submit">Wyślij formularz</button>
-
     </form>
   );
 }

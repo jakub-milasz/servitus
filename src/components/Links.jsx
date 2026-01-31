@@ -1,18 +1,45 @@
 import React from "react";
-import cityNames from "../pages/CityPage.jsx";
-import logo2 from '../img/logo2.png'
+import logo2 from "../img/logo2.png";
 
-export default function Links() {
-  console.log(cityNames);
+export default function Links({ cityNames }) {
+  const entries = Object.entries(cityNames);
+  const chunkSize = 5;
+  const end = entries.length % chunkSize;
+
+  const columns = [];
+  let counter = 1;
+  for (let i = 0; i < entries.length - end; i += chunkSize) {
+    if (counter <= end) {
+      columns.push(entries.slice(i, i + chunkSize + 1));
+    } else {
+      columns.push(entries.slice(i, i + chunkSize));
+    }
+    counter++;
+  }
+
   return (
-    <div className="links">
-      <img src={logo2} alt='Logo' className="logo" />
-      <h2>Przydatne linki</h2>
-      <a href="/warszawa">Odszkodowania za przesył Warszawa</a><br />
-      <a href="/krakow">Odszkodowania za przesył Kraków</a><br />
-      <a href="/wroclaw">Odszkodowania za przesył Wrocław</a><br />
-      <a href="/poznan">Odszkodowania za przesył Poznań</a><br />
-      <a href="/katowice">Odszkodowania za przesył Katowice</a><br />
-    </div>
+    <>
+      <div className="links">
+        {columns.slice(0, columns.length / 2).map((column, colIndex) => (
+          <div key={colIndex} className="column">
+            {column.map(([cityKey, cityName]) => (
+              <a key={cityKey} href={`/${cityKey}`} className="city-link">
+                {cityName}
+              </a>
+            ))}
+          </div>
+        ))}
+        <img src={logo2} alt="Logo" className="logo" />
+          {columns.slice(columns.length / 2, columns.length).map((column, colIndex) => (
+          <div key={colIndex} className="column">
+            {column.map(([cityKey, cityName]) => (
+              <a key={cityKey} href={`/${cityKey}`} className="city-link">
+                {cityName}
+              </a>
+            ))}
+          </div>
+        ))}
+        </div>
+    </>
   );
 }
