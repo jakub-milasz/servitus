@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Form() {
   return (
-    <form action="https://formsubmit.co/michal.milasz@adwokatura.pl" method="post" id="form">
+    <form action="https://formsubmit.co/servitus.odszkodowania@gmail.com" method="post" id="form">
       
       <div className="form-group">
         <label htmlFor="firstname">Imię:</label>
