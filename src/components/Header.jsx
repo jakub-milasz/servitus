@@ -1,9 +1,11 @@
-import React from "react";
+import Title from "./Title";
+import Form from "./Form";
 
 export default function Header({ cityName }) {
   return (
     <header>
-      <h1>Odszkodowania za przesył {cityName}</h1>
+      <Title cityName={cityName} />
+      <Form />
     </header>
   );
 }
