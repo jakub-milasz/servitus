@@ -363,3 +363,19 @@ button {
 button:hover {
   background: #3f68e0;
 }
+
+@media (max-width: 968px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .articles {
+    flex-direction: column;
+  }
+
+  .contact-row {
+    flex-direction: column;
+  }
+}
