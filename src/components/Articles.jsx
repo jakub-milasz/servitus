@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const ExpandableArticle = ({ title, intro, children }) => {
+const ExpandableArticle = ({ title, intro, children, direction }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <article style={{ marginBottom: '2rem' }}>
+    <article data-aos={`fade-${direction}`} style={{ marginBottom: '2rem' }}>
       <h2>{title}</h2>
       <p>{intro}</p>
       <AnimatePresence initial={false}>
@@ -40,10 +40,11 @@ const ExpandableArticle = ({ title, intro, children }) => {
 
 export default function Articles() {
   return (
-      <div className="articles">
+      <div data-aos="fade-up" className="articles">
         <ExpandableArticle 
           title="Koniec z darmowym korzystaniem z gruntów! Przełomowe stanowisko Sądu Najwyższego."
           intro="Właściciele nieruchomości od lat toczą nierówną walkę z gigantami energetycznymi, gazowymi czy spółkami komunalnymi. Główną bronią przedsiębiorstw przesyłowych, pozwalającą unikać płacenia za słupy i rurociągi, był zarzut zasiedzenia. Jednak postanowienie Sądu Najwyższego z dnia 24 lutego 2023 r. (sygn. akt III CZP 108/22) fundamentalnie zmienia reguły gry na korzyść właścicieli gruntów."
+          direction="right"
         >
           <p>
             Sąd Najwyższy sformułował tezę, która może okazać się &quot;atomowym argumentem&quot; w Twojej
@@ -84,6 +85,7 @@ export default function Articles() {
         <ExpandableArticle 
           title="Wyrok Trybunału Konstytucyjnego P 10/16: Koniec mitu o zasiedzeniu. Czas na walkę o odszkodowania!"
           intro="Dnia 2 grudnia 2025 r. Trybunał Konstytucyjny wydał orzeczenie (sygn. akt P 10/16), które stanowi punkt zwrotny w sporach na linii właściciele nieruchomości - przedsiębiorstwa przesyłowe. W wyroku tym Trybunał ostatecznie przeciął wieloletni spór prawny, orzekając na korzyść obywateli."
+          direction="left"
         >
           <p>
             Przez lata giganci energetyczni, gazowi czy wodociągowi unikali płacenia za korzystanie z

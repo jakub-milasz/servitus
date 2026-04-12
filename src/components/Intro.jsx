@@ -3,14 +3,14 @@ export default function Intro() {
     <div className="intro">
       <div className="intro-content">
         <div className="page">
-          <section className="hero">
+          <section data-aos="fade-up" className="hero">
             <h1>Masz urządzenia przesyłowe na swojej nieruchomości?</h1>
             <p className="subtitle">
               Sprawdź, jakie masz prawa i czy przysługuje Ci wynagrodzenie.
             </p>
           </section>
 
-          <section className="card">
+          <section data-aos="fade-up" className="card">
             <h2>Dlaczego to ważne?</h2>
             <p>
               Linia wysokiego napięcia, gazociąg lub rurociąg na działce może
@@ -19,7 +19,7 @@ export default function Intro() {
             </p>
           </section>
 
-          <section className="card">
+          <section data-aos="fade-up" className="card">
             <h2>Służebność przesyłu – co to oznacza?</h2>
             <p>
               To prawo pozwalające przedsiębiorstwu korzystać z cudzej
@@ -29,7 +29,7 @@ export default function Intro() {
             </p>
           </section>
 
-          <section className="card highlight">
+          <section data-aos="fade-up" className="card highlight">
             <h2>Możesz dochodzić swoich praw, jeśli:</h2>
             <ul>
               <li>nie podpisywałeś umowy</li>
@@ -39,7 +39,7 @@ export default function Intro() {
             </ul>
           </section>
 
-          <section className="cta">
+          <section data-aos="fade-up" className="cta">
             <h2>Sprawdź swoją sytuację</h2>
             <button
               onClick={() =>

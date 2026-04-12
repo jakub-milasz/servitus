@@ -3,7 +3,7 @@ export default function Contact() {
     <div className="contact">
       <div className="contact-content">
         <div className="contact-row">
-          <div className="contact-column">
+          <div data-aos="fade-right" className="contact-column">
             <p><b>Jak możemy pomóc?</b></p>
             <ul>
               <li>analizujemy stan prawny nieruchomości</li>
@@ -13,7 +13,7 @@ export default function Contact() {
               <li>reprezentujemy klientów przed sądem</li>
             </ul>
           </div>
-          <div className="contact-column">
+          <div data-aos="fade-left" className="contact-column">
             <p><b>Skontaktuj się z nami, aby dowiedzieć się:</b></p>
             <ul>
               <li>czy przysługuje Ci wynagrodzenie za służebność przesyłu,</li>
@@ -22,7 +22,7 @@ export default function Contact() {
             </ul>
           </div>
         </div>
-        <div className="contact-bottom">
+        <div data-aos="fade-up" className="contact-bottom">
           <p>
             Każdą sprawę traktujemy indywidualnie, dążąc do maksymalnej ochrony interesów właściciela nieruchomości.
           </p>
